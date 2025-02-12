@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232f3e;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header .logo img {
+    height: 30px;
+}
+
+.header .search-bar {
+    display: flex;
+    flex: 1;
+    margin: 0 20px;
+}
+
+.header .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+}
+
+.header .search-bar button {
+    padding: 10px;
+    background-color: #febd69;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.header .nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product button {
+    background-color: #febd69;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #232f3e;
+    color: white;
+}
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Existing styles... */
+
+@media (max-width: 1200px) {
+    .product {
+        width: 30%;
+    }
+}
+
+@media (max-width: 992px) {
+    .product {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .search-bar {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .header .search-bar input {
+        border-radius: 3px;
+        margin-bottom: 10px;
+    }
+
+    .header .search-bar button {
+        border-radius: 3px;
+    }
+
+    .product {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header .logo img {
+        height: 40px;
+    }
+
+    .header .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header .nav a {
+        margin: 5px 0;
+    }
+
+    .product {
+        width: 100%;
+    }
+}
